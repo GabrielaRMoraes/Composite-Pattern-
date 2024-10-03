@@ -50,7 +50,7 @@ final class TSqlUpdate extends TSqlInstruction{
         if($this->columnValues){
             foreach($this->columnValues as $column=>$value){
 
-                $set[] = "{$column} = {value}";
+                $set[] = "{$column} = {$value}";
         }
     }
 

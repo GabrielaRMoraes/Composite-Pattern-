@@ -18,11 +18,12 @@ $criteria->add(new TFilter('id', '=', '3'));
 // cria instrução de UPDATE
 $sql = new TSqlUpdate;
 // define a entidade
-$sql->setEntity('aluno');
+$sql->setEntity('Aluno');
 // atribui o valor de cada coluna 
-$sql->setRowData('nome','Pedro Cardoso da Silva');
-$sql->setRowData('rua','Machado de Assis');
-$sql->setRowData('fone','(88)5555');
+$sql->setRowData('Nome','Pedro Cardoso da Silva');
+$sql->setRowData('Rua','Machado de Assis');
+$sql->setRowData('Fone','(88)5555');
+
 
 // define o critério de seleção de dados
 $sql->setCriteria($criteria);
