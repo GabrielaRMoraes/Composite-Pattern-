@@ -58,8 +58,10 @@ final class TSqlUpdate extends TSqlInstruction{
     //retorna a clausula where do objeto $this->$criteria
 
         if($this->criteria){
-        $this->sql .= 'WHERE' . $this->criteria->dump;
+        $this->sql .= 'WHERE' . $this->criteria->dump();
         }
+        
+        return $this->sql;
     }
 }
 
