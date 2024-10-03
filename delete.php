@@ -8,13 +8,13 @@ spl_autoload_register(function ($classe){
 
 // cria seleção de dados
 $criteria = new TCriteria;
-$criteria->add(new TFilter('ID','=','3'));
+$criteria->add(new TFilter('id','=','3'));
 
 // cria instrução DELETE
 $sql = new TSqlDelete;
 
 // define a entidade
-$sql->setEntity('Aluno');
+$sql->setEntity('Aluno ');
 
 // define o critério de seleção de dados
 $sql->setCriteria($criteria);
@@ -22,7 +22,7 @@ $sql->setCriteria($criteria);
 // processa a instrução sql 
 echo $sql-> getInstruction();
 
-echo "<br>\n";
+echo "<br>";
 
 
 ?>
