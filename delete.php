@@ -8,7 +8,7 @@ spl_autoload_register(function ($classe){
 
 // cria seleção de dados
 $criteria = new TCriteria;
-$criteria->add(new TCriteria('ID', '=', '3'));
+$criteria->add(new TFilter('ID','=','3'));
 
 // cria instrução DELETE
 $sql = new TSqlDelete;
