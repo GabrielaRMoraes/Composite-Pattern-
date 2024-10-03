@@ -14,7 +14,7 @@ final class TSqlDelete extends TSqlInstruction{
 
         // retorna a claussula WHERE do objeto $this->criteria
         if($this->criteria){
-            $expression = $this->criteria->dumb();
+            $expression = $this->criteria->dump();
 
             if($expression){
                 $this->sql .= 'WHERE' . $expression;

@@ -13,7 +13,7 @@ spl_autoload_register(function ($classe){
 // cria um critério de seleção 
 
 $criteria = new TCriteria;
-$criteria->add(new TFilter('id', '=', '3'));
+$criteria->add(new TFilter('ID', '=', '3'));
 
 // cria instrução de UPDATE
 $sql = new TSqlUpdate;
